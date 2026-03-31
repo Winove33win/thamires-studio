@@ -7,79 +7,122 @@
   <meta name="description" content="Ajudo empresas e profissionais a se posicionarem com estratégia, consistência e conteúdo profissional." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<!-- background shapes -->
+<div class="bg-shape s1"></div>
+<div class="bg-shape s2"></div>
+<div class="bg-shape s3"></div>
+
 <!-- NAV -->
 <nav id="nav">
-  <div class="nav-logo">Studio Digital</div>
+  <div class="nav-logo">Studio<span class="logo-dot">.</span></div>
   <ul class="nav-links">
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#servicos">Serviços</a></li>
     <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#contato" class="nav-cta">Fale comigo</a></li>
   </ul>
+  <a href="#contato" class="nav-cta">Fale comigo ↗</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-glow"></div>
-  <div>
-    <div class="hero-badge">Social Media · Design · Vídeo · Fotografia</div>
-    <h1>Sua marca merece uma <em>presença digital</em> que gera resultados</h1>
-    <p>Vou muito além de posts bonitos. Ajudo empresas e profissionais a se posicionarem com estratégia, consistência e conteúdo profissional.</p>
-    <div class="hero-actions">
-      <a href="#servicos" class="btn-primary">Conheça os serviços</a>
-      <a href="#portfolio" class="btn-outline">Ver portfólio</a>
+  <div class="hero-inner container">
+
+    <div class="hero-text">
+      <div class="hero-tag"><span class="tag-star">✦</span> Social Media &amp; Design Profissional</div>
+      <h1 class="hero-title">
+        <span class="hl-normal">Sua marca</span>
+        <span class="hl-pink">merece uma</span>
+        <span class="hl-outline">presença</span>
+        <span class="hl-normal">digital</span>
+      </h1>
+      <p class="hero-desc">Vou muito além de posts bonitos. Ajudo empresas e profissionais a se posicionarem com estratégia, consistência e conteúdo que realmente gera resultados.</p>
+      <div class="hero-btns">
+        <a href="#servicos" class="btn-primary">Conheça os serviços</a>
+        <a href="#portfolio" class="btn-ghost">Ver portfólio ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-blob"></div>
+      <img src="assets/images/portfolio/thamires.png" alt="Thamires" class="hero-img" />
+
+      <!-- rotating badge -->
+      <div class="badge-rotate">
+        <svg viewBox="0 0 160 160" width="160" height="160" aria-hidden="true">
+          <defs>
+            <path id="bp" d="M80,80 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1-124,0"/>
+          </defs>
+          <text font-size="8.5" font-family="Inter,sans-serif" font-weight="600" letter-spacing="2" fill="#0D0D0D">
+            <textPath href="#bp">SOCIAL MEDIA • DESIGN • FOTOGRAFIA •&nbsp;&nbsp;</textPath>
+          </text>
+        </svg>
+        <div class="badge-center">✦</div>
+      </div>
+
+      <!-- floating pills -->
+      <div class="float-pill pill-1">📊 Estratégia</div>
+      <div class="float-pill pill-2">🎨 Design</div>
+      <div class="float-pill pill-3">📷 Fotografia</div>
     </div>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    scroll
-  </div>
+
+  <!-- decorative stars -->
+  <div class="hero-star hs1">✦</div>
+  <div class="hero-star hs2">✦</div>
 </section>
+
+<!-- MARQUEE 1 -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>SOCIAL MEDIA</span><span class="ms">✦</span>
+    <span>DESIGN</span><span class="ms">✦</span>
+    <span>VÍDEO</span><span class="ms">✦</span>
+    <span>FOTOGRAFIA</span><span class="ms">✦</span>
+    <span>ESTRATÉGIA</span><span class="ms">✦</span>
+    <span>CONTEÚDO</span><span class="ms">✦</span>
+    <span>SOCIAL MEDIA</span><span class="ms">✦</span>
+    <span>DESIGN</span><span class="ms">✦</span>
+    <span>VÍDEO</span><span class="ms">✦</span>
+    <span>FOTOGRAFIA</span><span class="ms">✦</span>
+    <span>ESTRATÉGIA</span><span class="ms">✦</span>
+    <span>CONTEÚDO</span><span class="ms">✦</span>
+  </div>
+</div>
 
 <!-- ABOUT -->
 <section class="about" id="sobre">
-  <div class="container">
-    <div class="about-inner">
-      <div class="about-image-grid">
-        <div class="about-img tall fade-up">
-          <img id="about-img-1" alt="Design profissional" />
-        </div>
-        <div style="display:flex;flex-direction:column;gap:12px;">
-          <div class="about-img fade-up" style="transition-delay:.15s">
-            <img id="about-img-2" alt="Conteúdo estratégico" />
-          </div>
-          <div class="about-img fade-up" style="transition-delay:.25s">
-            <img id="about-img-3" alt="Social media design" />
-          </div>
-        </div>
+  <div class="container about-inner">
+    <div class="about-imgs">
+      <div class="aimg aimg-tall fade-up">
+        <img id="about-img-1" alt="Design profissional" />
       </div>
-      <div class="about-text fade-up" style="transition-delay:.1s">
-        <span class="section-label">Sobre meu trabalho</span>
-        <h2 class="section-title">Cada marca tem uma <em>história única</em></h2>
-        <p class="section-desc">
-          Meu trabalho vai muito além de posts bonitos. Eu ajudo empresas e profissionais a se posicionarem com estratégia, consistência e conteúdo profissional, criando uma presença digital que realmente gera resultados.
-        </p>
-        <p class="section-desc" style="margin-top:16px;">
-          Cada marca tem uma história única e o meu objetivo é transformá-la em conteúdo que conecta, gera autoridade e atrai clientes.
-        </p>
-        <div class="stats-row">
-          <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Conteúdo Personalizado</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">4</div>
-            <div class="stat-label">Áreas de Atuação</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">∞</div>
-            <div class="stat-label">Possibilidades Criativas</div>
-          </div>
+      <div class="aimg-col">
+        <div class="aimg fade-up" style="transition-delay:.15s"><img id="about-img-2" alt="Conteúdo" /></div>
+        <div class="aimg fade-up" style="transition-delay:.25s"><img id="about-img-3" alt="Social media" /></div>
+      </div>
+    </div>
+    <div class="about-text fade-up" style="transition-delay:.1s">
+      <span class="section-label">✦ Sobre meu trabalho</span>
+      <h2 class="section-title">Cada marca tem uma <em>história única</em></h2>
+      <p class="section-desc">Meu trabalho vai muito além de posts bonitos. Eu ajudo empresas e profissionais a se posicionarem com estratégia, consistência e conteúdo profissional, criando uma presença digital que realmente gera resultados.</p>
+      <p class="section-desc" style="margin-top:14px;">Cada marca tem uma história única e o meu objetivo é transformá-la em conteúdo que conecta, gera autoridade e atrai clientes.</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Personalizado</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Áreas de Atuação</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Possibilidades</div>
         </div>
       </div>
     </div>
@@ -87,15 +130,15 @@
 </section>
 
 <!-- SERVICES -->
-<section id="servicos">
+<section class="services" id="servicos">
   <div class="container">
-    <div class="fade-up">
-      <span class="section-label">O que eu faço</span>
+    <div class="services-header fade-up">
+      <span class="section-label">✦ O que eu faço</span>
       <h2 class="section-title">Soluções completas para <em>marcas que crescem</em></h2>
-      <p class="section-desc">Ofereço soluções completas para marcas que querem crescer no digital de forma profissional.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card fade-up" style="transition-delay:.1s">
+      <div class="service-card fade-up" data-color="pink" style="transition-delay:.1s">
+        <span class="service-num">01</span>
         <div class="service-icon">📊</div>
         <h3>Social Media Estratégico</h3>
         <p>Planejamento completo de conteúdo com foco em posicionamento, crescimento e geração de leads.</p>
@@ -107,7 +150,8 @@
           <li>Acompanhamento contínuo</li>
         </ul>
       </div>
-      <div class="service-card fade-up" style="transition-delay:.2s">
+      <div class="service-card fade-up" data-color="purple" style="transition-delay:.2s">
+        <span class="service-num">02</span>
         <div class="service-icon">🎨</div>
         <h3>Criação de Design</h3>
         <p>Criação de artes profissionais alinhadas à identidade visual da sua marca.</p>
@@ -118,7 +162,8 @@
           <li>Materiais promocionais</li>
         </ul>
       </div>
-      <div class="service-card fade-up" style="transition-delay:.3s">
+      <div class="service-card fade-up" data-color="orange" style="transition-delay:.3s">
+        <span class="service-num">03</span>
         <div class="service-icon">🎬</div>
         <h3>Captação de Vídeos</h3>
         <p>Produção de vídeos estratégicos para aumentar alcance e engajamento.</p>
@@ -129,7 +174,8 @@
           <li>Conteúdo para campanhas</li>
         </ul>
       </div>
-      <div class="service-card fade-up" style="transition-delay:.4s">
+      <div class="service-card fade-up" data-color="yellow" style="transition-delay:.4s">
+        <span class="service-num">04</span>
         <div class="service-icon">📷</div>
         <h3>Fotografia Profissional</h3>
         <p>Imagens que valorizam sua marca e fortalecem sua presença digital.</p>
@@ -144,44 +190,62 @@
   </div>
 </section>
 
+<!-- MARQUEE 2 (reverse, dark) -->
+<div class="marquee-strip mq-dark mq-rev">
+  <div class="marquee-track">
+    <span>ESTRATÉGIA DE CONTEÚDO</span><span class="ms">★</span>
+    <span>DESIGN PROFISSIONAL</span><span class="ms">★</span>
+    <span>CRESCIMENTO ORGÂNICO</span><span class="ms">★</span>
+    <span>IDENTIDADE VISUAL</span><span class="ms">★</span>
+    <span>REELS ESTRATÉGICOS</span><span class="ms">★</span>
+    <span>ESTRATÉGIA DE CONTEÚDO</span><span class="ms">★</span>
+    <span>DESIGN PROFISSIONAL</span><span class="ms">★</span>
+    <span>CRESCIMENTO ORGÂNICO</span><span class="ms">★</span>
+    <span>IDENTIDADE VISUAL</span><span class="ms">★</span>
+    <span>REELS ESTRATÉGICOS</span><span class="ms">★</span>
+  </div>
+</div>
+
 <!-- HOW IT WORKS -->
 <section class="how">
   <div class="container">
     <div class="how-header fade-up">
-      <span class="section-label">Como funciona</span>
-      <h2 class="section-title">Meu processo de <em>trabalho</em></h2>
-      <p class="section-desc">Tudo pensado para fortalecer sua presença digital e gerar crescimento consistente.</p>
+      <span class="section-label light">✦ Como funciona</span>
+      <h2 class="section-title light">Meu processo de <em>trabalho</em></h2>
     </div>
     <div class="steps">
       <div class="step fade-up" style="transition-delay:.1s">
-        <div class="step-number">1</div>
+        <div class="step-num">01</div>
         <h4>Entendo sua marca</h4>
-        <p>Mergulho no universo da sua marca e entendo seus objetivos e público-alvo.</p>
+        <p>Mergulho no universo da sua marca, objetivos e público-alvo.</p>
       </div>
+      <div class="step-arrow">→</div>
       <div class="step fade-up" style="transition-delay:.2s">
-        <div class="step-number">2</div>
+        <div class="step-num">02</div>
         <h4>Crio a estratégia</h4>
-        <p>Desenvolvo uma estratégia de conteúdo personalizada para os seus objetivos.</p>
+        <p>Desenvolvo uma estratégia de conteúdo personalizada.</p>
       </div>
+      <div class="step-arrow">→</div>
       <div class="step fade-up" style="transition-delay:.3s">
-        <div class="step-number">3</div>
+        <div class="step-num">03</div>
         <h4>Produzo o material</h4>
-        <p>Crio todo o conteúdo visual e estratégico com alto padrão profissional.</p>
+        <p>Crio todo o conteúdo visual com alto padrão profissional.</p>
       </div>
+      <div class="step-arrow">→</div>
       <div class="step fade-up" style="transition-delay:.4s">
-        <div class="step-number">4</div>
+        <div class="step-num">04</div>
         <h4>Acompanho resultados</h4>
-        <p>Monitoro e ajusto a estratégia para garantir crescimento consistente.</p>
+        <p>Monitoro e ajusto para garantir crescimento consistente.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio">
+<section class="portfolio" id="portfolio">
   <div class="container">
     <div class="portfolio-header fade-up">
-      <span class="section-label">Portfólio</span>
+      <span class="section-label">✦ Portfólio</span>
       <h2 class="section-title">Trabalhos <em>realizados</em></h2>
       <p class="section-desc">Uma seleção dos projetos desenvolvidos para diferentes segmentos e marcas.</p>
     </div>
@@ -207,27 +271,23 @@
 
 <!-- AUDIENCE -->
 <section class="audience">
-  <div class="container">
-    <div class="audience-inner">
-      <div class="fade-up">
-        <span class="section-label">Para quem é</span>
-        <h2 class="section-title">Feito para quem quer <em>crescer</em></h2>
-        <ul class="audience-list">
-          <li>Empresas que querem crescer nas redes sociais</li>
-          <li>Profissionais que querem se posicionar</li>
-          <li>Marcas que precisam de conteúdo profissional</li>
-          <li>Negócios que querem atrair mais clientes</li>
-        </ul>
-      </div>
-      <div class="audience-visual fade-up" style="transition-delay:.2s">
-        <div class="audience-card">
-          <div class="audience-card-img">
-            <img id="audience-img" alt="Portfólio de design" />
-          </div>
-          <div class="audience-card-body">
-            <p>"Uma presença digital forte não é um luxo — é a diferença entre uma marca que é encontrada e uma que é ignorada."</p>
-            <strong>— Estratégia de conteúdo profissional</strong>
-          </div>
+  <div class="container audience-inner">
+    <div class="fade-up">
+      <span class="section-label">✦ Para quem é</span>
+      <h2 class="section-title">Feito para quem quer <em>crescer</em></h2>
+      <ul class="audience-list">
+        <li>Empresas que querem crescer nas redes sociais</li>
+        <li>Profissionais que querem se posicionar</li>
+        <li>Marcas que precisam de conteúdo profissional</li>
+        <li>Negócios que querem atrair mais clientes</li>
+      </ul>
+    </div>
+    <div class="audience-visual fade-up" style="transition-delay:.2s">
+      <div class="audience-card">
+        <div class="audience-card-img"><img id="audience-img" alt="Portfólio" /></div>
+        <div class="audience-card-body">
+          <p>"Uma presença digital forte é a diferença entre uma marca que é encontrada e uma que é ignorada."</p>
+          <strong>— Estratégia de conteúdo profissional</strong>
         </div>
       </div>
     </div>
@@ -236,21 +296,23 @@
 
 <!-- CTA -->
 <section class="cta-section" id="contato">
-  <div class="container">
-    <div class="cta-box fade-up">
-      <span class="section-label">Vamos conversar</span>
-      <h2 class="section-title">Pronto para transformar <em>sua marca?</em></h2>
-      <p class="section-desc">Entre em contato e vamos criar juntos uma estratégia que realmente gera resultados para o seu negócio.</p>
-      <a href="https://wa.me" class="btn-primary">Falar no WhatsApp</a>
-    </div>
+  <div class="cta-deco cta-d1">✦</div>
+  <div class="cta-deco cta-d2">✦</div>
+  <div class="container cta-inner fade-up">
+    <span class="section-label light">✦ Vamos conversar</span>
+    <h2 class="section-title light">Pronto para transformar <em class="cta-em">sua marca?</em></h2>
+    <p class="section-desc cta-desc">Entre em contato e vamos criar juntos uma estratégia que realmente gera resultados para o seu negócio.</p>
+    <a href="https://wa.me" class="btn-cta">Falar no WhatsApp ↗</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Studio Digital</div>
-  <p>Social Media · Design · Vídeo · Fotografia</p>
-  <p style="margin-top:16px;font-size:.8rem;">© 2025 · Todos os direitos reservados</p>
+  <div class="container footer-inner">
+    <div class="footer-logo">Studio<span>.</span></div>
+    <p>Social Media · Design · Vídeo · Fotografia</p>
+    <p class="footer-copy">© 2025 · Todos os direitos reservados</p>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

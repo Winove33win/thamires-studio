@@ -115,3 +115,26 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ── Counter animation ──
+const statObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseInt(el.dataset.target, 10);
+    if (isNaN(target)) return;
+    const duration = 1500;
+    const start = performance.now();
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(ease * target);
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(update);
+    statObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-number[data-target]').forEach(el => statObserver.observe(el));

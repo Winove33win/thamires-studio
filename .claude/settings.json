@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"Design para agencia de viagens.png\" assets/images/portfolio/agencia-viagens-01.png)",
+      "Bash(cp \"Design para agencia de viagens\\(1\\).png\" assets/images/portfolio/agencia-viagens-02.png)",
+      "Bash(cp \"Design para agencia de viagens\\(2\\).png\" assets/images/portfolio/agencia-viagens-03.png)",
+      "Bash(cp \"Design para agencia de viagens\\(3\\).png\" assets/images/portfolio/agencia-viagens-04.png)",
+      "Bash(cp \"Design para agencia de viagens\\(4\\).png\" assets/images/portfolio/agencia-viagens-05.png)",
+      "Bash(start \"\" \"http://localhost:3000\")",
+      "Bash(gh repo:*)",
+      "Bash(where git:*)",
+      "Bash(git --version)",
+      "Bash(where curl:*)",
+      "Read(//c/Users/Nrtfe/Downloads/**)",
+      "Bash(grep -i -E \"\\\\.\\(png|jpg|jpeg|webp\\)$\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(gh auth:*)",
+      "Bash(cmd.exe /c \"where gh\")",
+      "Bash(cmd.exe /c \"gh --version\")",
+      "Bash(cmd.exe /c \"winget install --id GitHub.cli -e --silent\")",
+      "Bash(cmd.exe /c \"winget install GitHub.cli\")",
+      "Bash(git config:*)",
+      "Bash(cmd.exe /c \"git credential-manager --version\")",
+      "Bash(cmd.exe /c \"git credential-manager-core --version\")",
+      "Bash(cmd.exe /c \"scoop install gh\")",
+      "Bash(powershell -Command \"Invoke-WebRequest -Uri ''https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_windows_amd64.msi'' -OutFile ''$env:TEMP\\\\gh.msi''; Start-Process msiexec.exe -ArgumentList ''/i'',''$env:TEMP\\\\gh.msi'',''/quiet'' -Wait; Write-Host ''Done''\")",
+      "Bash(powershell -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri ''https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_windows_amd64.msi'' -OutFile \"\"$env:TEMP\\\\gh.msi\"\"; Start-Process msiexec.exe -ArgumentList \"\"/i\"\",\"\"$env:TEMP\\\\gh.msi\"\",\"\"/quiet\"\" -Wait; Write-Host Done\")",
+      "Bash(powershell -Command \"curl.exe -L -o \"\"$env:TEMP\\\\gh.msi\"\" \"\"https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_windows_amd64.msi\"\" && msiexec /i \"\"$env:TEMP\\\\gh.msi\"\" /quiet && echo Done\")",
+      "Bash(curl.exe -L -o \"C:/Users/Nrtfe/AppData/Local/Temp/gh.msi\" \"https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_windows_amd64.msi\")",
+      "Bash(cmd.exe /c \"msiexec /i C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh.msi /quiet /norestart\")",
+      "Bash(cmd.exe /c \"\"\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"\" --version\")",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c/Users/Nrtfe/**)",
+      "Bash(cmd.exe /c \"dir \"\"C:\\\\Program Files\\\\GitHub CLI\"\" 2>nul || dir \"\"C:\\\\Program Files \\(x86\\)\\\\GitHub CLI\"\" 2>nul\")",
+      "Bash(curl.exe -L -o \"C:/Users/Nrtfe/AppData/Local/Temp/gh.zip\" \"https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_windows_amd64.zip\")",
+      "Bash(cmd.exe /c \"powershell -Command \"\"Expand-Archive -Path ''C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh.zip'' -DestinationPath ''C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh-cli'' -Force\"\"\")",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh-cli 2>nul\")",
+      "Bash(cmd.exe /c \"tar -xf C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh.zip -C C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\ 2>&1 && echo OK\")",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\gh_2.65.0_windows_amd64\\\\bin\\\\gh.exe 2>&1\")",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\Nrtfe\\\\AppData\\\\Local\\\\Temp\\\\ /B 2>&1\")",
+      "Bash(unzip -o gh.zip -d gh-cli)",
+      "Bash(GH=\"/c/Users/Nrtfe/AppData/Local/Temp/gh-cli/bin/gh.exe\")",
+      "Bash(\"$GH\" --version)",
+      "Bash(\"$GH\" auth:*)",
+      "Bash(\"$GH\" repo:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Nrtfe\\Downloads"
+    ]
+  }
+}
